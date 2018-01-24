@@ -13,17 +13,17 @@ namespace WindowsFormsApplication3
     {
         List<Point> path = new List<Point>();
         bool beginDraw = false;
-
+        Boolean up = false, down = false;
+        Airplane airplane = new Airplane();
+        int score = 0;
         public Form1()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            {
-                bt1.Image = Image.FromFile("D\\maybay.jpg");
-            }
+        { 
+                bt1.Image = Image.FromFile("D\\maybay.jpg"); 
         }
 
         private void Form1_MouseMove(object sender, MouseEventArgs e)
@@ -35,11 +35,12 @@ namespace WindowsFormsApplication3
             DrawPath();
         }
 
+
         private void DrawPath()
         {
-            Graphics g = new Graphics(this);
+            Graphics g = this.CreateGraphics();
             foreach (Point p in path)
-                g.DrawRectangle(
+                g.Dispose();
                 
         }
 
@@ -51,6 +52,26 @@ namespace WindowsFormsApplication3
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
             beginDraw = false;
+        }
+
+        private void btnBatDau_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Up && down == false)
+            {
+                up = true;
+                down = false;
+            }
+
+            if (e.KeyData == Keys.Down && up == false)
+            {
+                down = true;
+                up = false;
+            }
         }
     }
 }
