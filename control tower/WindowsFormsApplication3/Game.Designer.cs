@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication3
 {
-    partial class Form1
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,12 @@
         {
             this.bt4 = new System.Windows.Forms.Button();
             this.bt3 = new System.Windows.Forms.Button();
-            this.bt2 = new System.Windows.Forms.Button();
             this.bt5 = new System.Windows.Forms.Button();
             this.bt1 = new System.Windows.Forms.Button();
             this.ptb1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusScore = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnBatDau = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptb1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,15 +57,6 @@
             this.bt3.Size = new System.Drawing.Size(76, 45);
             this.bt3.TabIndex = 4;
             this.bt3.UseVisualStyleBackColor = true;
-            // 
-            // bt2
-            // 
-            this.bt2.Image = global::WindowsFormsApplication3.Properties.Resources.Untitled6;
-            this.bt2.Location = new System.Drawing.Point(680, 80);
-            this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(138, 105);
-            this.bt2.TabIndex = 3;
-            this.bt2.UseVisualStyleBackColor = true;
             // 
             // bt5
             // 
@@ -119,32 +108,19 @@
             this.toolStripStatusScore.Size = new System.Drawing.Size(13, 17);
             this.toolStripStatusScore.Text = "0";
             // 
-            // btnBatDau
-            // 
-            this.btnBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBatDau.Location = new System.Drawing.Point(389, 65);
-            this.btnBatDau.Name = "btnBatDau";
-            this.btnBatDau.Size = new System.Drawing.Size(198, 50);
-            this.btnBatDau.TabIndex = 8;
-            this.btnBatDau.Text = "BẮT ĐẦU";
-            this.btnBatDau.UseVisualStyleBackColor = true;
-            this.btnBatDau.Click += new System.EventHandler(this.btnBatDau_Click);
-            // 
-            // Form1
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 502);
-            this.Controls.Add(this.btnBatDau);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.bt4);
             this.Controls.Add(this.bt3);
-            this.Controls.Add(this.bt2);
             this.Controls.Add(this.bt5);
             this.Controls.Add(this.bt1);
             this.Controls.Add(this.ptb1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Game";
+            this.Text = "Flight Control";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
@@ -162,13 +138,11 @@
         private System.Windows.Forms.PictureBox ptb1;
         private System.Windows.Forms.Button bt1;
         private System.Windows.Forms.Button bt5;
-        private System.Windows.Forms.Button bt2;
         private System.Windows.Forms.Button bt3;
         private System.Windows.Forms.Button bt4;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusScore;
-        private System.Windows.Forms.Button btnBatDau;
     }
 }
 
